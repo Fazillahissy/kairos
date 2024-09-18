@@ -10,20 +10,24 @@
     <title>Kairos App</title>
 </head>
 <body>
+
     <div class="weather-app">
     <head>
-        <form>
-            <input type="search" placeholder="Enter a city">
-            <input type="submit" value="search">
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city" required class="search-form-input">
+            <input type="submit" value="Search" class="search-form-button">
 
         </form>
     </head>
     <main>
-    <h1>Johannesburg</h1>
-    <p>Wednesday 20:23, Mostly clear
-    <br/> Humidity : 65%, Wind:5km/h
+    
+        <h1>Johannesburg</h1>
+        <div class="weather-stats">
+        <p>Wednesday 20:23, Mostly clear
+    <br/> Humidity :<strong> 65% </strong>, Wind:<strong>5km/h</strong>
     </p>
-    🌤️18°C
+    <div class="temp">🌤️18°C</div>
+    </div>
     </main>
     
     

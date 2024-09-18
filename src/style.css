@@ -1,11 +1,11 @@
-body{background-color:#19171f;
+body{background-color:#04040c;
     font-family:  "Roboto Slab", serif;
       font-optical-sizing: auto;
       font-style: normal;
-    
+    color: rgb(195, 192, 218);
 }
 .weather-app{
-    background-color: #8575b648;
+    background-color: #23106375;
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
@@ -13,3 +13,49 @@ body{background-color:#19171f;
     box-shadow: 0 30px 60px (rgb(174, 168, 214));
     
 }
+header{
+   border-bottom: 2px #04040c;
+   padding: 30px; 
+}
+.search-form-input{
+    border: none;
+    border-radius:5px ;
+    width: 70%;
+    padding: 12px;
+    background-color: #19171f;
+    font-size: 16px;
+}
+.search-form-button{
+    background-color: #47477e;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 800px;
+    color: #a892da;
+    margin-left: 5px;
+}
+main{padding: auto;}
+.weather-stats{
+    display: flex;
+    justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+}
+strong{
+    color: #8c20adfd ;
+}
+.temp{
+    font-size: 40px;
+}
+footer{
+    border-bottom: 2px #04040c;
+    padding: 30px; 
+    text-align: center;
+    font-size: small;
+
+ }
+ a{
+    color: aqua;
+ }
