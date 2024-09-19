@@ -12,16 +12,21 @@
 <body>
 
     <div class="weather-app">
-    <head>
-        <form class="search-form">
-            <input type="search" placeholder="Enter a city" required class="search-form-input">
-            <input type="submit" value="Search" class="search-form-button">
+    <header>
+        <form class="search-form" id="search-form">
+            <input type="search" 
+            placeholder="Enter a city" 
+            required class="search-form-input"
+            id="search-form-input"/>
+            <input type="submit"
+             value="Search" 
+             class="search-form-button"/>
 
         </form>
-    </head>
+    </header>
     <main>
     
-        <h1>Johannesburg</h1>
+        <h1 class="weather-app-city" id="city">Johannesburg</h1>
         <div class="weather-stats">
         <p>Wednesday 20:23, Mostly clear
     <br/> Humidity :<strong> 65% </strong>, Wind:<strong>5km/h</strong>
@@ -39,5 +44,6 @@ hosted by
 <a href="https://issy-kairos.netlify.app/" target="_blank" >Netlify</a>    
     </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
