@@ -57,10 +57,11 @@ strong{
 
 }
 .temperature-icon{
-    font-size: 40px;
+    width: 50px;
 }
 .unit{
     font-size: 40px;
+    margin-top: 6px;
 }
 footer{
     border-bottom: 2px #04040c;
