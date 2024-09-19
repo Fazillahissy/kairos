@@ -27,13 +27,18 @@
     </header>
     <main>
     
-        <h1 class="weather-app-city" id="city">Johannesburg</h1>
+        <h1 class="weather-app-city" id="city"></h1>
         <div class="weather-stats">
-        <p>Wednesday 20:23, Mostly clear
+        <p>Wednesday 20:23, <span class="description"></span>
     <br/> Humidity :<strong> 65% </strong>, Wind:<strong>5km/h</strong>
     </p>
-    <div class="temp">🌤️18°C</div>
+    <div class="temperature-container">
+    <div class="temperature-icon">🌤️
     </div>
+    <div class="temperature" id="temperature"></div>
+    <div class="unit">°C</div>
+    </div>
+        </div>
     </main>
     
     

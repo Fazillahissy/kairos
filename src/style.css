@@ -43,10 +43,23 @@ main{padding: auto;}
   font-size: 16px;
   line-height: 20px;
 }
+.temperature-container{
+    line-height:40px;
+    flex: right;
+    
+}
 strong{
     color: #8c20adfd ;
 }
-.temp{
+.temperature{
+    font-size: 40px;
+    margin: 0;
+
+}
+.temperature-icon{
+    font-size: 40px;
+}
+.unit{
     font-size: 40px;
 }
 footer{
