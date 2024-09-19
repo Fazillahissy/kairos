@@ -1,75 +1,111 @@
-body{background-color:#04040c;
-    font-family:  "Roboto Slab", serif;
-      font-optical-sizing: auto;
-      font-style: normal;
+body {
+    background-color: #04040c;
+    font-family: "Roboto Slab", serif;
     color: rgb(195, 192, 218);
 }
-.weather-app{
-    background-color: #23106375;
+
+.weather-app {
+    background-color: rgba(35, 16, 99, 0.75);
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
-    border-radius:16px ;
-    box-shadow: 0 30px 60px (rgb(174, 168, 214));
-    
+    border-radius: 16px;
+    box-shadow: 0 30px 60px rgba(174, 168, 214, 0.3);
 }
-header{
-   border-bottom: 2px #04040c;
-   padding: 30px; 
+
+header {
+    padding-bottom: 20px; 
 }
-.search-form-input{
+
+h1 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form-input {
     border: none;
-    border-radius:5px ;
+    border-radius: 5px;
     width: 70%;
     padding: 12px;
     background-color: #373342;
     font-size: 16px;
 }
-.search-form-button{
+
+.search-form-button {
     background-color: #47477e;
     border: none;
     border-radius: 5px;
     padding: 15px;
     width: 20%;
     font-size: 16px;
-    font-weight: 800px;
+    font-weight: bold;
     color: #a892da;
     margin-left: 5px;
+    cursor: pointer;
 }
-main{padding: auto;}
-.weather-stats{
+
+.search-form-button:hover {
+    background-color: #5a5c9f;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.weather-stats {
     display: flex;
     justify-content: space-between;
-  font-size: 16px;
-  line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
 }
+
 .temperature-container{
     line-height:40px;
-    flex: right;
-    
-}
-strong{
-    color: #8c20adfd ;
-}
-.temperature{
-    font-size: 40px;
-    margin: 0;
+display: flex;
+align-items: center;
+font-weight: 800;}
 
+.temperature {
+    font-size: 48px;
+    margin-right: 5px;
+    line-height: 1;
 }
-.temperature-icon{
-    width: 50px;
+
+.temperature-icon {
+    width: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
-.unit{
-    font-size: 40px;
-    margin-top: 6px;
+
+.unit {
+    font-size: 32px;
+   line-height: 1;
 }
-footer{
-    border-bottom: 2px #04040c;
-    padding: 30px; 
+
+
+
+strong {
+    color: #8c20adfd;
+}
+
+footer {
+    
+    padding-top: 20px; 
     text-align: center;
     font-size: small;
+}
 
- }
- a{
+a {
     color: aqua;
- }
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

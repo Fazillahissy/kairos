@@ -1,17 +1,18 @@
 function updateWeather(response) {
     let humidityElement = document.querySelector("#humidity");
     let windSpeedElement = document.querySelector("#wind-speed");
-    let timeElement = document.querySelector("#time");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
     let iconElement = document.querySelector("#icon");
     let temperatureElement = document.querySelector("#temperature");
-
     let date = new Date(response.data.time * 1000); 
+    let dateElement = document.querySelector("#date");
+
+    
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
     cityElement.innerHTML = response.data.city; 
-    timeElement.innerHTML = formatDate(date);
-    humidityElement.innerHTML = `${response.data.humidity}%`;
+    dateElement.innerHTML = formatDate(date);
+    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     descriptionElement.innerHTML = response.data.condition.description; 
     windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`; 
     temperatureElement.innerHTML = Math.round(response.data.temperature.current);
@@ -34,10 +35,10 @@ function updateWeather(response) {
         minutes=`0${minutes}`;
     }
         return `${day} ${hours}:${minutes}`;
-    
+  
 }
 
-
+ 
 function searchCity(city){
 let apiKey= "9t4ae6a86b37850da034f318653bfo06";
 let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
