@@ -75,12 +75,12 @@ font-weight: 800;}
     font-size: 48px;
     margin-right: 5px;
     line-height: 1;
+   
 }
 
 .temperature-icon {
-    width: 30px;
-    margin-right: 5px;
-    vertical-align: middle;
+    width: 100%;
+   
 }
 
 .unit {
@@ -110,8 +110,10 @@ justify-content: space-around;
 }
 
 .weather-forecast-icon {
-    font-size: 38px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
 }
 
 .weather-forecast-temperatures {
@@ -124,6 +126,7 @@ justify-content: space-around;
 
 .weather-forecast-temperature {
     padding: 0 10px;
+    color: #8c20adfd;
 }
 footer {
     
