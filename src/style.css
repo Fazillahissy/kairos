@@ -5,7 +5,7 @@ body {
 }
 
 .weather-app {
-    background-color: rgba(35, 16, 99, 0.75);
+    background-color: rgba(44, 5, 54, 0.75);
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
@@ -91,7 +91,7 @@ font-weight: 800;}
 
 
 strong {
-    color: #8c20adfd;
+    color: #14728afd;
 }
 
 
@@ -117,7 +117,7 @@ justify-content: space-around;
 }
 
 .weather-forecast-temperatures {
-    color: #8c20adfd;
+    color: #0b4e509d;
     display: flex;
     justify-content: center; 
     margin-top: 10px;
@@ -126,7 +126,7 @@ justify-content: space-around;
 
 .weather-forecast-temperature {
     padding: 0 10px;
-    color: #8c20adfd;
+    color: #209cadfd;
 }
 footer {
     
