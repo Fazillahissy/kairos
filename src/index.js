@@ -16,6 +16,8 @@ function updateWeather(response) {
     descriptionElement.innerHTML = response.data.condition.description; 
     windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`; 
     temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+
+    getForecast(response.data.city);
 }
     function formatDate(date) {
         let hours = date.getHours();
@@ -50,8 +52,14 @@ function handleSearchSubmit(event) {
     let searchInput=document.querySelector('#search-form-input');
 searchCity(searchInput.value);
 }
+function getForecast(city){
+let apiKey="9t4ae6a86b37850da034f318653bfo06";
+let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+axios(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+
+function displayForecast(response) {
     
     let days= ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
     let forecastHtml="";
@@ -81,5 +89,6 @@ let searchFormElement= document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Johannesburg");
+getForecast();
 displayForecast();
 
